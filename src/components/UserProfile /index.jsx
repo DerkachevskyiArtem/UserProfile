@@ -8,7 +8,7 @@ const user = {
   imgSrc: 'https://example.com/avatar.jpg',
   isMale: true,
   email: 'userUserenko@example.com',
-  password: 'securepassword123',
+  password: 'supersecurepassword123',
 };
 
 function UserProfile() {
