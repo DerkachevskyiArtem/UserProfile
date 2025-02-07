@@ -8,7 +8,7 @@ function UserProfile({ user }) {
       <img
         className={styles.userAvatar}
         src={imgSrc}
-        alt={`${user.firstName}${lastName}`}
+        alt={`${firstName}${lastName}`}
       />
       <h2 className={styles.userName}>
         {firstName} {lastName}
