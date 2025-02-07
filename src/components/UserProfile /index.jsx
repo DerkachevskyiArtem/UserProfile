@@ -2,20 +2,19 @@ import PropTypes from 'prop-types';
 import styles from './UserProfile .module.scss';
 
 function UserProfile({ user }) {
+  const { firstName, lastName, imgSrc, isMale, email } = user;
   return (
     <div className={styles.userProfile}>
       <img
         className={styles.userAvatar}
-        src={user.imgSrc}
-        alt={`${user.firstName}${user.lastName}`}
+        src={imgSrc}
+        alt={`${user.firstName}${lastName}`}
       />
       <h2 className={styles.userName}>
-        {user.firstName} {user.lastName}
+        {firstName} {lastName}
       </h2>
-      <p className={styles.userGender}>
-        Gender: {user.isMale ? 'male' : 'female'}
-      </p>
-      <p className={styles.userEmail}>Email: {user.email}</p>
+      <p className={styles.userGender}>Gender: {isMale ? 'male' : 'female'}</p>
+      <p className={styles.userEmail}>Email: {email}</p>
     </div>
   );
 }
