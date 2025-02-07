@@ -4,7 +4,7 @@ import styles from './UserProfile .module.scss';
 function UserProfile({ user }) {
   const { firstName, lastName, imgSrc, isMale, email } = user;
   return (
-    <div className={styles.userProfile}>
+    <article className={styles.userProfile}>
       <img
         className={styles.userAvatar}
         src={imgSrc}
@@ -15,7 +15,7 @@ function UserProfile({ user }) {
       </h2>
       <p className={styles.userGender}>Gender: {isMale ? 'male' : 'female'}</p>
       <p className={styles.userEmail}>Email: {email}</p>
-    </div>
+    </article>
   );
 }
 
